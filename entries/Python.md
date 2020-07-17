@@ -1,1 +1,1 @@
-this is python
+Python is a general purpose programming language
