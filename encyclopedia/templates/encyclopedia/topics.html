@@ -1,0 +1,26 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+{% if title_for_url %}
+    {{title_for_url}}
+{% else %}
+    ERROR-PAGE
+{% endif %}
+{% endblock %}
+
+{% block body %}
+{% if title %}
+    <h1>{{title}}</h1>
+    <hr>
+{% endif %}
+{% if description %}
+    {{description | safe}}
+{% else %}
+    <p style="margin-top:60px;font-size:20px;">Nothing here yet!!! Would you like to add something? => <a href="{% url 'createpage' %}">Create a Page</a></p>
+{% endif %}
+{% if title_for_url %}
+    <a href="{% url 'edit' title_for_url %}">
+        <button type="button" class="btn btn-success">EDIT</button>
+    </a>
+{% endif %}
+{% endblock %}
