@@ -19,3 +19,4 @@ $ pip install -r requirements.txt
 
 This is an open source project so you can add any new files as you wish in order to improve the Wikipedia-clone, but be sure to improve it rather than filling with random pages.
 
+To create a new page: Write in the [markdown format](https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax) and it will be converted to HTML.
